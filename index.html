@@ -1,48 +1,70 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Compra Confirmada</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
   body {
-    background: linear-gradient(135deg, #f8cdda, #1d2b64);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
     margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    padding: 20px;
     text-align: center;
+
+    /* Imagem de fundo atualizada */
+    background: url('https://i.imgur.com/ARqh9mm.jpeg') no-repeat center center/cover;
+
+    /* Camada escura para melhorar a leitura do texto */
+    position: relative;
   }
-  .message {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
-    padding: 25px 30px;
+
+  /* Camada escura */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
     max-width: 450px;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 40px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 25px rgba(255, 0, 80, 0.7);
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 8px rgba(255, 0, 80, 0.8);
   }
+
   a.button-link {
+    display: inline-block;
+    margin-top: 40px;
     text-decoration: none;
-    background-color: #ff4081;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 1.5rem;
+    background-color: #ff1e56;
+    padding: 18px 36px;
+    border-radius: 40px;
+    font-size: 1.7rem;
     font-weight: 700;
     color: white;
-    box-shadow: 0 8px 15px rgba(255, 64, 129, 0.4);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px #ff1e56, 0 0 40px #ff1e56;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
     outline-offset: 4px;
   }
   a.button-link:hover,
   a.button-link:focus {
-    background-color: #e91e63;
-    box-shadow: 0 12px 20px rgba(233, 30, 99, 0.6);
+    box-shadow: 0 0 40px #ff1e56, 0 0 80px #ff1e56;
+    transform: scale(1.1);
     outline: none;
   }
   a.button-link:focus-visible {
@@ -52,18 +74,17 @@
 </style>
 </head>
 <body>
-  <div class="message">
-    💛 Compra Confirmada! 💛<br /><br />
-    Oi, gostoso! Sua compra do Pack Ouro foi aprovada com sucesso.<br /><br />
-    Você está prestes a receber 32 mídias exclusivas, bem safadinhas, do jeitinho que você gosta 😈🔥<br /><br />
-    Aproveita tudinho e me conta depois o que achou 😘<br /><br />
-    Beijinhos da sua loirinha sapeca,<br />
+  <div class="container">
+    💛 Compra Confirmada, meu lindo! 💛<br /><br />
+    Seu desejo foi atendido... O Pack Ouro chegou quentinho pra você, com 32 mídias mega safadinhas, prontinhas pra te deixar louquinho 😈🔥<br /><br />
+    Curta cada momento e depois me conta tudinho que eu adoro saber o que você mais gostou 😘<br /><br />
+    Beijinhos da sua loirinha mais sapeca,<br />
     Thalya 💋
-  </div>
 
-  <a href="https://drive.google.com/drive/folders/1XRoPfjTgPNM5azbVEK_vDdYpr5J1-gpr?usp=sharing"
-     target="_blank" rel="noopener noreferrer"
-     class="button-link"
-     aria-label="Acessar pack ouro com 32 mídias exclusivas">Meu pack</a>
+    <a href="https://drive.google.com/drive/folders/1XRoPfjTgPNM5azbVEK_vDdYpr5J1-gpr?usp=sharing"
+       target="_blank" rel="noopener noreferrer"
+       class="button-link"
+       aria-label="Acessar pack ouro com 32 mídias exclusivas">Meu pack quente</a>
+  </div>
 </body>
 </html>
